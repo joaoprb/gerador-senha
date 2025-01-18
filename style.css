@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #cac5c5;
+}
+
+.container {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+/* Estilos de componentes */
+.slider, .checkbox {
+    margin: 20px 0;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+.slider label {
+    font-weight: bold;
+}
+
+.checkbox label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button button:hover {
+    background-color: #0056B3;
+}
+
+.password-display {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#password-output {
+    background-color: #F9F9F9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: monospace;
+    font-size: 16px;
+    word-wrap: break-word;
+}
+
+#copy-password {
+    background-color: #28A745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#copy-password:hover {
+    background-color: #218838;
+}
+
+/* Media Queries para Responsividade */
+
+/* Tablets e dispositivos com largura até 768px */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;  /* Aumenta a largura da container */
+        padding: 15px;  /* Ajusta o padding para telas menores */
+    }
+
+    .button button {
+        font-size: 14px;  /* Ajusta o tamanho do botão */
+        padding: 8px 16px;  /* Ajusta o padding do botão */
+    }
+
+    #password-output {
+        font-size: 14px;  /* Ajusta o tamanho da fonte para celular/tablet */
+    }
+}
+
+/* Celulares com largura até 480px */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;  /* Container ocupa mais espaço em celulares */
+        padding: 10px;  /* Ajuste o padding */
+    }
+
+    .button button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #password-output {
+        font-size: 14px;  /* Tamanho da fonte ajustado para celulares */
+    }
+}
